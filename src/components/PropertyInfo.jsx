@@ -12,14 +12,15 @@ export default function PropertyInfo() {
     <>
       {/* Enquiry Modal */}
       {showEnquiry && (
-  <div className="fixed left-0 w-screen h-screen z-30 flex items-center justify-center">
-    <div className="bg-white rounded-xl w-full max-w-sm mx-2  p-5 relative">
-      <button
-        className="absolute top-2 right-3 text-gray-600 text-xl"
-        onClick={() => setShowEnquiry(false)}
-      >
-        ×
-      </button>
+        <div className="fixed left-0 w-screen h-screen z-30 flex items-center justify-center">
+            <div className="bg-white rounded-xl w-full max-w-xs mx-2 p-5 relative min-h-[500px]">
+
+            <button
+              className="absolute top-2 right-3 text-gray-600 text-xl"
+              onClick={() => setShowEnquiry(false)}
+            >
+              ×
+            </button>
 
             <div className="flex flex-col items-center gap-4">
               {/* Header */}
@@ -63,7 +64,7 @@ export default function PropertyInfo() {
                   <input type="checkbox" defaultChecked className="mt-1" />
                   <span>
                     I Consent to data use per
-                    <a href="#" className="text-blue-600 ml-1">Privacy</a> &
+                    <a href="#" className="text-blue-600 ml-1">Privacy</a> & 
                     <a href="#" className="text-blue-600 ml-1">Terms</a>.
                   </span>
                 </label>
@@ -89,14 +90,17 @@ export default function PropertyInfo() {
       )}
 
       {/* Card */}
-      <div className="relative w-72">
-        <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
+      <div className="relative w-56 sm:w-90 lg:w-72 xl:w-[400px] transform -translate-y-120">
+
+
+
+        <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-20">
           <div className="bg-red-600 text-white text-xs font-semibold py-1 px-4 rounded-t-xl rounded-b-sm shadow-md">
             NEW LAUNCH
           </div>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200 pt-6">
+        <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-200 pt-6 pb-8 sm:pb-10">
           <div className="px-4 pb-4 text-center">
             <h2 className="text-xl font-bold text-gray-900">GOEL GANGA NEW TOWN</h2>
             <p className="text-sm text-gray-700">At Dhanori, Pune</p>
@@ -130,7 +134,6 @@ export default function PropertyInfo() {
           </div>
         </div>
       </div>
-      
     </>
   );
 }

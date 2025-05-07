@@ -4,18 +4,18 @@ const AboutGoelGanga = () => {
   return (
     <section className="flex flex-col md:flex-row items-center justify-between gap-8 px-6 py-12 bg-white">
       {/* Text Content */}
-      <div className="md:w-1/2">
-        <h2 className="text-red-600 text-2xl font-bold mb-4">
+      <div className="md:w-1/2 text-center md:text-left">
+        <h2 className="text-red-600 text-2xl sm:text-3xl font-bold mb-4">
           About Goel Ganga New Town
         </h2>
-        <p className="text-gray-500 text-base mb-4">
+        <p className="text-gray-500 text-base sm:text-lg mb-4">
           Ganga New Town is the biggest township of Dhanori. Dhanori is one of
           the most popular locations in Pune and is developing at an
           exponential rate when it comes to infrastructure improvements.
         </p>
         <a
           href="#"
-          className="text-blue-600 underline text-sm inline-block mb-6"
+          className="text-blue-600 underline text-sm sm:text-base inline-block mb-6"
         >
           Read more
         </a>
@@ -39,18 +39,17 @@ const AboutGoelGanga = () => {
       </div>
 
       {/* Image with curved border matching reference */}
-      <div className="md:w-1/2">
+      <div className="md:w-1/2 flex justify-align">
         <div className="relative">
-        <img
-  src="/gall6.webp"
-  alt="Goel Ganga New Town"
-  className="w-32 md:w-80"
-  style={{
-    borderRadius: '40px 0 40px 0',
-    boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
-  }}
-/>
-
+          <img
+            src="/gall6.webp"
+            alt="Goel Ganga New Town"
+            className="w-48 sm:w-64 md:w-80"
+            style={{
+              borderRadius: '40px 0 40px 0',
+              boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+            }}
+          />
         </div>
       </div>
     </section>

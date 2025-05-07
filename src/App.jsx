@@ -5,26 +5,33 @@ import HeroImageSlider from './components/HeroImageSlider';
 import PropertyInfo from './components/PropertyInfo';
 import PropertyCard from './components/PropertyCard';
 import AboutGoelGanga from './components/AboutGoelGanga';
+
 function App() {
   return (
     <div>
       <Navbar />
       <div className="relative w-full h-[500px]">
-      {/* Image Carousel */}
-      <HeroImageSlider />
+        {/* Image Carousel */}
+        <HeroImageSlider />
 
-      {/* Optional dark overlay for better readability */}
-      <div className="absolute inset-0 " />
+        {/* Optional dark overlay for better readability */}
+        <div className="absolute inset-0" />
 
-      {/* Property Info Card Positioned */}
-      <div className="absolute top-1/2 left-4 transform -translate-y-1/2 z-20">
-        <PropertyInfo />
+        {/* Property Info Card Positioned */}
+        <div className="absolute top-1/2 left-4 transform -translate-y-1/2 z-20">
+          <PropertyInfo />
+        </div>
       </div>
-    </div>
-    <AboutGoelGanga/>
-      <PropertyCard/>
+
+      {/* Add margin-top to avoid overlap with HeroImageSlider */}
+      <div className="mt-[200px]">
+        <AboutGoelGanga />
+      </div>
+
+      <PropertyCard />
     </div>
   );
 }
 
 export default App;
+

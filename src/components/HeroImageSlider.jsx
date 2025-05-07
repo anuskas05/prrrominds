@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PropertyInfo from './PropertyInfo';
+
 const images = [
   '/img1.webp',
   '/img2.webp',
@@ -28,8 +29,7 @@ const ImageCarousel = ({ interval = 3000 }) => {
   };
 
   return (
-     
-    <div className="relative w-full h-[500px] overflow-hidden">
+    <div className="relative w-full h-[500px] sm:h-[600px] lg:h-[700px] xl:h-[800px] overflow-hidden">
       {/* Slider track */}
       <div
         className="flex transition-transform duration-1000 ease-in-out"
@@ -43,7 +43,7 @@ const ImageCarousel = ({ interval = 3000 }) => {
             key={index}
             src={src}
             alt={`Slide ${index}`}
-            className="w-full h-[500px] object-cover flex-shrink-0"
+            className="w-full h-full object-cover flex-shrink-0"
             style={{ width: `${100 / images.length}%` }}
           />
         ))}
@@ -60,7 +60,6 @@ const ImageCarousel = ({ interval = 3000 }) => {
       </div>
 
       {/* Navigation buttons */}
-  
       <button
         onClick={goToNextSlide}
         className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 p-2 rounded-full z-10"
@@ -72,4 +71,5 @@ const ImageCarousel = ({ interval = 3000 }) => {
 };
 
 export default ImageCarousel;
+
 
