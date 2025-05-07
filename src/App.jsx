@@ -24,7 +24,7 @@ function App() {
       </div>
 
       {/* Add margin-top to avoid overlap with HeroImageSlider */}
-      <div className="mt-[200px]">
+      <div className="mt-[300px]">
         <AboutGoelGanga />
       </div>
 
