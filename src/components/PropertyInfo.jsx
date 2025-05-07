@@ -90,7 +90,7 @@ export default function PropertyInfo() {
       )}
 
       {/* Card */}
-      <div className="relative w-56 sm:w-90 lg:w-72 xl:w-[200px] transform -translate-y-70">
+      <div className="relative w-90 sm:w-90 lg:w-72 xl:w-[200px] xl:h-[300px] transform -translate-y-120">
 
 
 
