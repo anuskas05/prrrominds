@@ -12,14 +12,14 @@ export default function PropertyInfo() {
     <>
       {/* Enquiry Modal */}
       {showEnquiry && (
-        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center px-2">
-          <div className="bg-white rounded-xl w-full max-w-md shadow-xl p-4 relative">
-            <button
-              className="absolute top-2 right-3 text-gray-600 text-xl"
-              onClick={() => setShowEnquiry(false)}
-            >
-              ×
-            </button>
+  <div className="fixed left-0 w-screen h-screen z-30 flex items-center justify-center">
+    <div className="bg-white rounded-xl w-full max-w-sm mx-2  p-5 relative">
+      <button
+        className="absolute top-2 right-3 text-gray-600 text-xl"
+        onClick={() => setShowEnquiry(false)}
+      >
+        ×
+      </button>
 
             <div className="flex flex-col items-center gap-4">
               {/* Header */}

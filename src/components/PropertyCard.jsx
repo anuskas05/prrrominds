@@ -69,7 +69,7 @@ const PropertyCard = () => {
   return (
     <div className="w-full mx-auto px-4 py-8">
       <div className="flex justify-center items-center mb-6">
-        <h3 className="text-lg sm:text-xl md:text-2xl text-red-600 text-center">
+      <h3 className="text-center text-red-600 text-lg sm:text-xl md:text-2xl font-semibold">
           Goel Ganga New Town Dhanori - Area & Pricing
         </h3>
       </div>
