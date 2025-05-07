@@ -123,7 +123,7 @@ const Navbar = () => {
           <ul className="flex flex-col space-y-2 p-4">
             <li><a href="#home" className="flex items-center text-red-800 font-semibold hover:text-red-600 hover:bg-gray-100 px-3 py-2 rounded transition-all"><FaHome className="mr-2" /> Home</a></li>
             <li><a href="#price" className="flex items-center text-red-800 font-semibold hover:text-red-600 hover:bg-gray-100 px-3 py-2 rounded transition-all"><FaDollarSign className="mr-2" /> Price</a></li>
-            <li><a href="#siteplan" className="flex items-center text-red-800 font-semibold text-2xl hover:text-red-600 hover:bg-gray-100 px-3 py-2 rounded transition-all"><FaMap className="mr-2" /> Site Plan</a></li>
+            <li><a href="#siteplan" className="flex items-center text-red-800 font-semibold  hover:text-red-600 hover:bg-gray-100 px-3 py-2 rounded transition-all"><FaMap className="mr-2" /> Site Plan</a></li>
             <li><a href="#amenities" className="flex items-center text-red-800 font-semibold hover:text-red-600 hover:bg-gray-100 px-3 py-2 rounded transition-all"><FaSwimmingPool className="mr-2" /> Amenities</a></li>
             <li><a href="#gallery" className="flex items-center text-red-800 font-semibold hover:text-red-600 hover:bg-gray-100 px-3 py-2 rounded transition-all"><FaImages className="mr-2" /> Gallery</a></li>
             <li><a href="#location" className="flex items-center text-red-800 font-semibold hover:text-red-600 hover:bg-gray-100 px-3 py-2 rounded transition-all"><FaMapMarkerAlt className="mr-2" /> Location</a></li>
